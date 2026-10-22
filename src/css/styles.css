@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: #0c1422;
+    color: #e9eef7;
+    font: 16px system-ui, sans-serif
+}
+
+header,
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 28px
+}
+
+header {
+    padding-bottom: 12px
+}
+
+header p {
+    color: #a8bad0
+}
+
+h1 {
+    font-size: 34px;
+    margin: 8px 0
+}
+
+small,
+.eyebrow {
+    color: #6ee7bc
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    background: #162338;
+    padding: 20px;
+    border-radius: 16px
+}
+
+label {
+    display: grid;
+    gap: 7px;
+    font-size: 13px;
+    flex: 1;
+    min-width: 150px
+}
+
+input,
+select,
+button {
+    font: inherit;
+    border: 1px solid #456078;
+    border-radius: 8px;
+    padding: 12px;
+    background: #0d192b;
+    color: #fff
+}
+
+button {
+    cursor: pointer;
+    background: #236c58;
+    align-self: end
+}
+
+button:hover {
+    background: #31876e
+}
+
+button:disabled {
+    opacity: .4;
+    cursor: default
+}
+
+input:focus,
+select:focus,
+button:focus-visible {
+    outline: 3px solid #6ee7bc
+}
+
+#status {
+    min-height: 24px;
+    color: #b9cbe1;
+    margin: 22px 0
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px
+}
+
+article {
+    background: #162338;
+    border: 1px solid #293b53;
+    border-radius: 15px;
+    overflow: hidden
+}
+
+article img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background: #22334a
+}
+
+article .content {
+    padding: 18px
+}
+
+article h2 {
+    font-size: 20px;
+    margin: 0 0 14px
+}
+
+dl {
+    margin: 0
+}
+
+dt {
+    color: #a2b6ce;
+    font-size: 12px
+}
+
+dd {
+    margin: 2px 0 12px;
+    overflow-wrap: anywhere
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 26px
+}
+
+footer {
+    color: #9db0ca;
+    padding: 20px;
+    text-align: center;
+    font-size: 13px
+}
+
+.art {
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover
+}
+
+form+form {
+    margin-top: 14px
+}

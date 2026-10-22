@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src https://itunes.apple.com; img-src 'self' https://*.mzstatic.com; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>Buscador de Canciones </title>
+    <link rel="icon" href="../assets/icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="eyebrow">APP DE ESCRITORIO</div>
+        <h1>Buscador de Canciones</h1>
+        <p>Busca un artista y filtra sus canciones por género, década y contenido.</p>
+    </header>
+    <main>
+        <form id="fetchForm"><label>Artista, canción o álbum<input id="term" value="rock"
+                    placeholder="Queen, Shakira, salsa…" maxlength="100"></label><button type="submit">Cargar
+                canciones</button></form>
+        <form id="filters"><label>Buscar en los resultados<input id="query" placeholder="Título, artista o álbum…"
+                    maxlength="100" autocomplete="off"></label><label>Género<select id="genre">
+                    <option value="">Todos</option>
+                </select></label><label>Década<select id="decade">
+                    <option value="">Todas</option>
+                </select></label><label>Contenido<select id="explicit">
+                    <option value="">Todos</option>
+                    <option value="yes">Explícito</option>
+                    <option value="no">Sin marca explícita</option>
+                </select></label><button id="reset" type="button">Limpiar filtros</button></form>
+        <p id="status" role="status" aria-live="polite"></p>
+        <section id="grid" aria-label="Resultados"></section>
+        <nav aria-label="Paginación"><button id="prev" disabled>Anterior</button><span id="page"></span><button
+                id="next" disabled>Siguiente</button></nav>
+    </main>
+    <footer>Proyecto académico · Datos de la iTunes Search API de Apple · Requiere Internet para consultar</footer>
+</body>
+
+</html> 

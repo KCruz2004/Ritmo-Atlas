@@ -1,0 +1,17 @@
+{
+  "name": "lectura-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ritmo Atlas - proyecto acad\u00e9mico Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "check": "node --check main.js && node --check src/js/app.js"
+  },
+  "devDependencies": {
+    "electron": "44.8.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
